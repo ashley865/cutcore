@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cutcore Upholstery mark">
+  <rect width="64" height="64" rx="16" fill="#b8542f"/>
+  <path d="M14 40c0-9 6-16 18-16s18 7 18 16" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M14 40v6a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 40v6a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="22" r="3.5" fill="#fff"/>
+</svg>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/index.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.cutcoreupholstery.co.za/assets/hero-leather-sofa.jpg</image:loc>
+      <image:title>Leather Chesterfield sofa reupholstery by Cutcore Upholstery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/services.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.cutcoreupholstery.co.za/assets/work-leather-recliners.jpg</image:loc>
+      <image:title>Pair of leather wingback recliners reupholstered by Cutcore Upholstery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cutcoreupholstery.co.za/assets/work-patio-dining-set.jpg</image:loc>
+      <image:title>Patio dining set with custom striped cushions</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/gallery.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.cutcoreupholstery.co.za/assets/work-office-chairs-before.jpg</image:loc>
+      <image:title>Office chairs booked in for reupholstery</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/about.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/contact.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/terms.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.cutcoreupholstery.co.za/privacy.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

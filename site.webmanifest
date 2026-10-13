@@ -1,0 +1,12 @@
+{
+  "name": "Cutcore Upholstery",
+  "short_name": "Cutcore",
+  "description": "Upholstery repairs, reupholstery and restoration in Randburg, Gauteng.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#faf6f1",
+  "theme_color": "#b8542f",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
