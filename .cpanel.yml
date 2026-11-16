@@ -3,3 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=$HOME/public_html/
     - /bin/cp -R *.html *.txt *.xml *.webmanifest css js assets $DEPLOYPATH
+    - touch $DEPLOYPATH.htaccess
+    - sed -i '/# BEGIN CUTCORE/,/# END CUTCORE/d' $DEPLOYPATH.htaccess
+    - cat .htaccess >> $DEPLOYPATH.htaccess
