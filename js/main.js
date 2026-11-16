@@ -133,6 +133,56 @@
     start();
   }
 
+  // Home page "Recent work": swap in different photos from the gallery every minute
+  var rotator = document.querySelector("[data-photo-rotator]");
+  if (rotator && window.fetch && window.DOMParser) {
+    var ROTATE_MS = 60000;
+    var FADE_MS = 650;
+    var pool = [];
+    var pointer = 0;
+
+    var shownSrcs = function () {
+      return Array.prototype.map.call(rotator.querySelectorAll("img"), function (img) {
+        return img.getAttribute("src");
+      });
+    };
+
+    var rotate = function () {
+      if (document.hidden || pool.length < 4) return;
+      var current = shownSrcs();
+      var next = [];
+      var guard = 0;
+      while (next.length < rotator.children.length && guard < pool.length * 2) {
+        var item = pool[pointer % pool.length];
+        pointer++;
+        guard++;
+        var src = item.querySelector("img").getAttribute("src");
+        if (current.indexOf(src) === -1 && next.indexOf(item) === -1) next.push(item);
+      }
+      if (!next.length) return;
+      rotator.classList.add("is-fading");
+      window.setTimeout(function () {
+        rotator.innerHTML = "";
+        next.forEach(function (item) {
+          var copy = item.cloneNode(true);
+          var img = copy.querySelector("img");
+          if (img) img.setAttribute("loading", "eager");
+          rotator.appendChild(copy);
+        });
+        window.setTimeout(function () { rotator.classList.remove("is-fading"); }, 120);
+      }, FADE_MS);
+    };
+
+    fetch("gallery.html", { credentials: "same-origin" })
+      .then(function (res) { return res.ok ? res.text() : Promise.reject(); })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, "text/html");
+        pool = Array.prototype.slice.call(doc.querySelectorAll(".gallery-photo"));
+        if (pool.length > 3) window.setInterval(rotate, ROTATE_MS);
+      })
+      .catch(function () { /* offline or file:// preview: keep the static photos */ });
+  }
+
   // POPIA / cookie notice
   var COOKIE_KEY = "cutcore_cookie_choice";
   var banner = document.getElementById("cookie-banner");

@@ -651,13 +651,10 @@ p { margin: 0 0 1em; }
   box-shadow: var(--shadow-md);
   aspect-ratio: 4 / 3;
 }
-.recliner-pair {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-.recliner-pair .figure-inline {
-  aspect-ratio: 1 / 1;
+.figure-portrait {
+  aspect-ratio: 4 / 5;
+  max-width: 440px;
+  margin-inline: auto;
 }
 .figure-inline img {
   width: 100%;
@@ -897,3 +894,10 @@ p { margin: 0 0 1em; }
 .text-center { text-align: center; }
 .mt-0 { margin-top: 0; }
 .badge-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+
+/* Home "Recent work" photo rotation */
+[data-photo-rotator] .gallery-photo { transition: opacity 0.6s ease, transform 0.18s ease, box-shadow 0.18s ease; }
+[data-photo-rotator].is-fading .gallery-photo { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  [data-photo-rotator] .gallery-photo { transition: none; }
+}
