@@ -643,6 +643,15 @@ p { margin: 0 0 1em; }
   .figure-banner { aspect-ratio: 4 / 3; }
 }
 
+.figure-banner-tall {
+  aspect-ratio: 6 / 5;
+  max-width: 640px;
+  margin-inline: auto;
+}
+@media (max-width: 620px) {
+  .figure-banner-tall { aspect-ratio: 6 / 5; }
+}
+
 /* Inline photo used within a text/image split section */
 .figure-inline {
   margin: 0;
